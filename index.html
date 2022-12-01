@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Widget</title>
+    <style>
+        .widget {
+            margin: 2rem;
+            border-radius: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .widget h3 {
+            margin-top: 0;
+        }
+        .widget p {
+            line-height: 1.5;
+        }
+        .form-group {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="widget widget-custom">
+        <style id="widget-custom-style"></style>
+        <h3>Title</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est aperiam eos! Dolores voluptate beatae ducimus voluptatem aperiam at corporis, quae officiis eos praesentium eius perferendis, omnis molestiae consectetur commodi!
+        </p>
+    </div>
+
+    <div class="form-group">
+        Фон виджета:
+        <select id="widget-background">
+            <option value="white">белый</option>
+            <option value="gray">серый</option>
+            <option value="black">чёрный</option>
+            <option value="red">красный</option>
+            <option value="orange">оранжевый</option>
+            <option value="yellow">жёлтый</option>
+            <option value="green">зелёный</option>
+            <option value="skyblue">голубой</option>
+            <option value="blue">синий</option>
+            <option value="purple">фиолетовый</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        Цвет текста в заголовке:
+        <select id="widget-header-color">
+            <option value="white">белый</option>
+            <option value="gray">серый</option>
+            <option value="black">чёрный</option>
+            <option value="red">красный</option>
+            <option value="orange">оранжевый</option>
+            <option value="yellow">жёлтый</option>
+            <option value="green">зелёный</option>
+            <option value="skyblue">голубой</option>
+            <option value="blue">синий</option>
+            <option value="purple">фиолетовый</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        Цвет текста в параграфе:
+        <select id="widget-paragraph-color">
+            <option value="white">белый</option>
+            <option value="gray">серый</option>
+            <option value="black">чёрный</option>
+            <option value="red">красный</option>
+            <option value="orange">оранжевый</option>
+            <option value="yellow">жёлтый</option>
+            <option value="green">зелёный</option>
+            <option value="skyblue">голубой</option>
+            <option value="blue">синий</option>
+            <option value="purple">фиолетовый</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        Внутренний отступ в корневом элементе:
+        <select id="widget-padding">
+            <option value="1rem">мелкий</option>
+            <option value="2rem">средний</option>
+            <option value="3rem">крупный</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        Индентация в параграфе:
+        <select id="widget-paragraph-indentation">
+            <option value="0">отсутствует</option>
+            <option value="1rem">мелкая</option>
+            <option value="2rem">средняя</option>
+            <option value="3rem">большая</option>
+        </select>
+    </div>
+
+    <script src="styler.js"></script>
+    <script src="formatter.js"></script>
+    <script src="storage.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
