@@ -1,6 +1,12 @@
 const styler = new Styler()
 
-const storage = new Storage()
+const storage = new Storage({
+    'widget-background': 'white',
+    'widget-padding': '1rem',
+    'widget-header-color': 'black',
+    'widget-paragraph-color': 'black',
+    'widget-paragraph-indentation': '0'
+})
 
 const customizableProperties = [
     'widget-background',

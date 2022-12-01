@@ -1,7 +1,7 @@
 class Storage {
-    constructor() {
+    constructor(defaultObj) {
         this.stored = localStorage?.stored
-        this.stored = this.stored ? JSON.parse(this.stored) : {}
+        this.stored = this.stored ? JSON.parse(this.stored) : defaultObj
     }
     set(key, value) {
         this.stored[key] = value
